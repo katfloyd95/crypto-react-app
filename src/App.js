@@ -1,3 +1,4 @@
+import logo from "./CryptoAppLogo.png"
 
 // Use this API
 // https://api2.binance.com/api/v3/ticker/24hr
@@ -18,11 +19,28 @@ function App() {
   // 3. ...and then store them in state?
 
   return (
-    <div className="App">
+    <div className='App'>
       <nav>
-        <img src="#" alt="Logo" />
+        <img src={logo} alt='Logo' />
         <input type='text' placeholder='Search' />
       </nav>
+      <div className='main-content'>
+        <h1>Today's Crypocurrency Prices</h1>
+        <table>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>24h %</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Bitcoin</td>
+            <td>$40,000</td>
+            <td style={{color: 'green'}}>▲1.02%</td>
+          </tr>
+        </table>
+      </div>
     </div>
   );
 }
