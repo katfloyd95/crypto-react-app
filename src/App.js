@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+// Use this API
+// https://api2.binance.com/api/v3/ticker/24hr
+
+// symbols we want...
+// BTCUSDT (Bitcoin)
+// ETHUSDT (Ethereum)
+// SOLUSDT (Solana)
+// ADAUSDT (Cardano)
+// DOGEUSDT (DogeCoin)
 
 function App() {
+
+  // 1. STATE AND USEEFFECT HERE
+
+  // 2. How will you "Pull out" the symbols we need?
+
+  // 3. ...and then store them in state?
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <img src="#" alt="Logo" />
+        <input type='text' placeholder='Search' />
+      </nav>
     </div>
   );
 }
