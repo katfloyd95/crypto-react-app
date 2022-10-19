@@ -39,13 +39,18 @@ nav > input::placeholder {
 .main-content > table {
   background-color: white;
   width: 100%;
-  text-align: center;
+  text-align: left;
   border-spacing: 0;
   font-size: 22px;
 }
 th, td {
   padding: 10px 0;
   border-bottom: 1px solid grey;
+  width: 25%;
+}
+th:first-child,
+td:first-child {
+  padding-left: 30px;
 }
 tr:last-child td {
   border-bottom: none;
